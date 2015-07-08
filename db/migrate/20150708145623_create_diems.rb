@@ -1,12 +1,12 @@
 class CreateDiems < ActiveRecord::Migration
   def change
     create_table   :diems do |t|
-    	t.interger :monhoc_id
-    	t.integer  :user_id
-    	t.integer  :lanthi
-    	t.integer  :diemthi
-    	t.integer  :loaithi
-    	t.datetime :time
+    	 t.integer :monhoc_id,              null: false, default: 0
+     	 t.integer :user_id,              null: false, default: 0
+      	t.integer  :lanthi,              null: false, default: 0
+      	t.integer  :diemthi,              null: false, default: 0
+      	t.integer  :loaithi_id,              null: false, default: 0
+      	t.datetime :time
     end
   end
 end
